@@ -2,7 +2,11 @@ Include this in your CUDA File.
 
 Example usecase ->
 
-    int main() {    
+    #include "CustomCudaMem.h"
+    //----kernel or functions here---------
+    
+    int main() 
+    {    
     int n = 1 << 10; // or whatver size you want
     // Size in bytes for memory allocation
     size_t bytes = n * n * sizeof(int);
